@@ -1,15 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Drag and Drop</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1 class="main-title">Kanban Board</h1>
+    <div class="drag-container">
+      <ul class="drag-list">
+        <!-- Backlog Column -->
+        <li class="drag-column backlog-column">
+          <span class="header">
+            <h1>Backlog</h1>
+          </span>
+          <!-- Backlog Content -->
+          <div id="backlog-content" class="custom-scroll">
+            <ul class="drag-item-list" id="backlog-list">
+              <li class="drag-item">Testing</li>
+              <li class="drag-item">Testing</li>
+              <li class="drag-item">Testing</li>
+            </ul>
+          </div>
+          <!-- Add Button Group -->
+          <div class="add-btn-group">
+            <div class="add-btn">
+              <span class="plus-sign">+</span>
+              <span>Add Item</span>
+            </div>
+            <div class="add-btn solid">
+              <span>Save Item</span>
+            </div>
+            <div class="add-container">
+              <div class="add-item"></div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Progress Column -->
+        <li class="drag-column progress-column">
+          <span class="header">
+            <h1>Progress</h1>
+          </span>
+          <!-- Progress Content -->
+          <div id="progress-content" class="custom-scroll">
+            <ul class="drag-item-list" id="progress-list">
+              <li class="drag-item">Testing</li>
+              <li class="drag-item">Testing</li>
+              <li class="drag-item">Testing</li>
+            </ul>
+          </div>
+          <!-- Add Button Group -->
+          <div class="add-btn-group">
+            <div class="add-btn">
+              <span class="plus-sign">+</span>
+              <span>Add Item</span>
+            </div>
+            <div class="add-btn solid">
+              <span>Save Item</span>
+            </div>
+            <div class="add-container">
+              <div class="add-item"></div>
+            </div>
+          </div>
+        </li>
+
+        <!-- Complete Column -->
+        <li class="drag-column complete-column">
+          <span class="header">
+            <h1>Complete</h1>
+          </span>
+          <!-- Complete Content -->
+          <div id="complete-content" class="custom-scroll">
+            <ul class="drag-item-list" id="complete-list">
+              <li class="drag-item">Testing</li>
+              <li class="drag-item">Testing</li>
+              <li class="drag-item">Testing</li>
+            </ul>
+          </div>
+          <!-- Add Button Group -->
+          <div class="add-btn-group">
+            <div class="add-btn">
+              <span class="plus-sign">+</span>
+              <span>Add Item</span>
+            </div>
+            <div class="add-btn solid">
+              <span>Save Item</span>
+            </div>
+            <div class="add-container">
+              <div class="add-item"></div>
+            </div>
+          </div>
+        </li>
+
+        <!-- On Hold Column -->
+        <li class="drag-column on-hold-column">
+          <span class="header">
+            <h1>On Hold</h1>
+          </span>
+          <!-- On Hold Content -->
+          <div id="on-hold-content" class="custom-scroll">
+            <ul class="drag-item-list" id="on-hold-list">
+              <li class="drag-item">Testing</li>
+              <li class="drag-item">Testing</li>
+              <li class="drag-item">Testing</li>
+              <li class="drag-item">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Mollitia possimus minus omnis minima sapiente est magni labore
+                deserunt odit quo eos, explicabo consequuntur tenetur quaerat,
+                nesciunt dolores exercitationem, provident hic? Lorem ipsum
+                dolor, sit amet consectetur adipisicing elit. Vel laboriosam
+                optio minima? Alias sint, mollitia dolore enim facilis iste
+                laudantium tenetur eum, voluptate eos quas dolores sit officiis
+                omnis deserunt. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Labore facere assumenda ipsa sint
+                reprehenderit obcaecati voluptatibus modi numquam beatae,
+                consectetur quibusdam officia harum magnam non distinctio
+                provident impedit. Optio, exercitationem. Lorem ipsum dolor sit
+                amet consectetur adipisicing elit. Nostrum est tempore, qui id
+                ipsa quasi doloremque, quis temporibus, quaerat hic sint
+                expedita nesciunt dolore non velit corrupti iusto in nobis.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet,
+                ea quas? Tenetur optio eum maiores accusamus perferendis
+                asperiores autem laborum provident sint reprehenderit.
+                Recusandae molestias assumenda ullam, unde similique nam. Lorem
+                ipsum dolor sit, amet consectetur adipisicing elit. Doloremque,
+                iste voluptatum porro dolore libero optio corporis repudiandae
+                esse quod vero cum recusandae dolores quo obcaecati fugit
+                molestias ut minus exercitationem!
+              </li>
+            </ul>
+          </div>
+          <!-- Add Button Group -->
+          <div class="add-btn-group">
+            <div class="add-btn">
+              <span class="plus-sign">+</span>
+              <span>Add Item</span>
+            </div>
+            <div class="add-btn solid">
+              <span>Save Item</span>
+            </div>
+            <div class="add-container">
+              <div class="add-item"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
     <!-- Script -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
