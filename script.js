@@ -107,6 +107,30 @@ function updateDOM() {
   updateSavedColumns();
 }
 
+// Add to Column List, Reset Textbox
+const addToColumn = (col) => {
+  const itemText = addItems[col].textContent;
+  const selectedArray = listArrays[col];
+  selectedArray.push(itemText);
+  updateDOM();
+  addItems[col].textContent = "";
+};
+
+// Show Add Item Input Box
+const showInputBox = (col) => {
+  addBtns[col].style.visibility = "hidden";
+  saveItemBtns[col].style.display = "flex";
+  addItemContainers[col].style.display = "flex";
+};
+
+// Hide Item Input Box
+const hideInputBox = (col) => {
+  addBtns[col].style.visibility = "visible";
+  saveItemBtns[col].style.display = "none";
+  addItemContainers[col].style.display = "none";
+  addToColumn(col);
+};
+
 const rebuildArrays = () => {
   backlogListArray = [];
   for (let i = 0; i < backlogList.children.length; i++) {
